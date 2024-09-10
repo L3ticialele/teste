@@ -1,0 +1,53 @@
+#adicionar{
+    width: 50px;
+}
+
+#adicionar:hover, .andar:hover, #primeiroAndar:hover{
+    opacity: 0.8;
+}
+
+.andar{
+    width: 200px;
+}
+
+#botaoAdicionarAndar{
+    margin-bottom: 1%;
+    background-color: transparent;
+    border: 0px;
+}
+
+h1{
+    margin-left: 28%;
+}
+
+html, body {
+    min-height: 100%;
+  }
+
+#inputs{
+    grid-row: 1/2;
+    background-color: beige;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-top: -5%;
+}
+
+#predio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-row: 1/2;
+    align-items: center;
+    margin-top: 35%;
+}
+
+#primeiroAndar{
+    width: 200px;
+}
+
+#tela{
+    display: grid;
+    grid-template-rows: 200px 1fr auto;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
