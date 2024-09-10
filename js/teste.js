@@ -12,18 +12,18 @@ function andarSelecionado(){
     for(let i = 0; i<arrayAndares.length; i++){
         if(arrayAndares[i].src == "file:///C:/Users/letic/Music/testeHTML/img/andarVerde.png"){
             imagemAndar = document.createElement("img");
-            imagemAndar.src = "../img/andar.png";
+            imagemAndar.src = "img/andar.png";
             imagemAndar.className = "andar";
             if(arrayAndares[i] == ultimoAndar){
                 ultimoAndar = imagemAndar;
             }
             imagemAndar.addEventListener('click', andarSelecionado);
             predioEl.replaceChild(imagemAndar,  arrayAndares[i]);
-            arrayAndares[i].src = "../img/andar.png";
+            arrayAndares[i].src = "img/andar.png";
             arrayAndares[i] = imagemAndar;
         }
         else if(arrayAndares[i].src == "file:///C:/Users/letic/Music/testeHTML/img/primeiroAndarVerde.png"){
-            primeiroAndarEl.src = "../img/primeiroAndar.png";
+            primeiroAndarEl.src = "img/primeiroAndar.png";
             primeiroAndarEl.id = "primeiroAndar";
             primeiroAndarEl.addEventListener('click', primeiroAndarSelecionado);
             predioEl.replaceChild(primeiroAndarEl,  arrayAndares[i]);
@@ -36,7 +36,7 @@ function andarSelecionado(){
 
     if(this.src == "file:///C:/Users/letic/Music/testeHTML/img/andar.png"){
         andarVerde = document.createElement("img");
-        andarVerde.src = "../img/andarVerde.png";
+        andarVerde.src = "img/andarVerde.png";
         andarVerde.className = "andar";
         andarVerde.addEventListener('click', andarSelecionado);
         if(this == ultimoAndar){
@@ -45,14 +45,13 @@ function andarSelecionado(){
         predioEl.replaceChild(andarVerde, this);
         arrayAndares[selecionado] = andarVerde;
     }
-
 };
 
 function adicionarAndar(){
     quantidadeAndares = document.querySelectorAll(".andar").length;
     if(quantidadeAndares < 5){
         imagemAndar = document.createElement("img");
-        imagemAndar.src = "../img/andar.png";
+        imagemAndar.src = "img/andar.png";
         imagemAndar.className = "andar";
         imagemAndar.addEventListener('click', andarSelecionado);
         predioEl.insertBefore(imagemAndar, ultimoAndar);
@@ -67,19 +66,19 @@ function primeiroAndarSelecionado(){
     for(let i = 0; i<arrayAndares.length; i++){
         if(arrayAndares[i].src == "file:///C:/Users/letic/Music/testeHTML/img/andarVerde.png"){
             imagemAndar = document.createElement("img");
-            imagemAndar.src = "../img/andar.png";
+            imagemAndar.src = "img/andar.png";
             imagemAndar.className = "andar";
             imagemAndar.addEventListener('click', andarSelecionado);
             if(arrayAndares[i] == ultimoAndar){
                 ultimoAndar = imagemAndar;
             }
             predioEl.replaceChild(imagemAndar,  arrayAndares[i]);
-            arrayAndares[i].src = "../img/andar.png";
+            arrayAndares[i].src = "img/andar.png";
             arrayAndares[i] = imagemAndar;
         }
     }
     if(this.src == "file:///C:/Users/letic/Music/testeHTML/img/primeiroAndar.png"){
-        primeiroAndarEl.src = "../img/primeiroAndarVerde.png";
+        primeiroAndarEl.src = "img/primeiroAndarVerde.png";
         primeiroAndarEl.addEventListener('click', primeiroAndarSelecionado);
         primeiroAndarEl.id = "primeiroAndar";
         predioEl.replaceChild(primeiroAndarEl, this);
