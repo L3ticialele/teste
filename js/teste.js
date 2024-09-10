@@ -89,3 +89,4 @@ function primeiroAndarSelecionado(){
 botaoAdicionarAndar.addEventListener('click', adicionarAndar);
 ultimoAndar.addEventListener('click', andarSelecionado);
 primeiroAndarEl.addEventListener('click', primeiroAndarSelecionado);
+
